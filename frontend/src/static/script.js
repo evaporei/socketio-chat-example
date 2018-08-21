@@ -9,3 +9,9 @@ $('form')
 
     event.preventDefault()
   })
+
+socket.on('chat message', message => {
+  const li = document.createElement('li')
+  li.appendChild(document.createTextNode(message))
+  $('#messages').appendChild(li)
+})
