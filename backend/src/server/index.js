@@ -11,6 +11,10 @@ const io = socketIo(server)
 io.on('connection', socket => {
   console.log('a user connected')
 
+  socket.on('chat message', message => {
+    console.log(`message: ${message}`)
+  })
+
   socket.on('disconnect', () => {
     console.log('user disconnected')
   })
