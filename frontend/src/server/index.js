@@ -3,8 +3,8 @@ const path = require('path')
 
 const app = express()
 
-const indexFilePath = path.resolve(`${__dirname}/../static/index.html`)
+const staticFolderPath = path.resolve(`${__dirname}/../static`)
 
-app.get('/', (req, res) => res.sendFile(indexFilePath))
+app.use(express.static(indexFilePath))
 
 app.listen(8080)
