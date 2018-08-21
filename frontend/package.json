@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontend of socket.io chat app",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "socket",
+    "example"
+  ],
+  "author": "Otávio Pace",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.3"
+  }
+}
